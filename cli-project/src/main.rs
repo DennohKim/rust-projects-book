@@ -1,6 +1,5 @@
 use clap::Parser;
 use colored::Colorize;
-use anyhow::{Context, Result};
 
 #[derive(Parser)] // attribute
 // struct for defining our command line arguments definition
@@ -80,14 +79,14 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 
 // Using std::env::args to get the command line argument
-fn using_std_env() {
-    let message = std::env::args().nth(1).expect("Missing the message. Usage: catsay <message>");
-
-    println!("{}", message);
-    println!(" \\");
-    println!("  \\");
-    println!("      /\\_/\\");
-    println!("      ( O  O )");
-    println!("      =( I )=");
-
-}
+// fn using_std_env() {
+//     let message = std::env::args().nth(1).expect("Missing the message. Usage: catsay <message>");
+//
+//     println!("{}", message);
+//     println!(" \\");
+//     println!("  \\");
+//     println!("      /\\_/\\");
+//     println!("      ( O  O )");
+//     println!("      =( I )=");
+//
+// }
